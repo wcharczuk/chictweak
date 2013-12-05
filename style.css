@@ -1,1 +1,92 @@
-#search { background-color: #0000066; }
+a
+{
+	color: #666;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #ff0085;
+	text-decoration: none;
+}
+
+.alignRight { text-align: right; }
+.alignCenter { text-align: center; }
+
+#topbar { }
+#topbar .screen-reader-text { display: none;}
+
+#topbar .search-form, #topbar .mailinglist-form { display: inline-block; }
+
+#site-navigation ul { list-style: none; display: inline-block; margin-left: 5; }
+
+
+#masthead
+{
+	margin-top:25px;
+}
+
+#site-navigation ul.nav-menu li.menu-item
+{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#site-navigation ul.sub-menu 
+{
+	display: none;
+	border: solid 1px #efefef;
+	padding:5px;
+}
+
+#site-navigation ul.sub-menu li.menu-item
+{
+	display: block
+}
+
+.hide { display: none; }
+.block { display: block; }
+
+.home-link
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#navbar a
+{
+	color: #000;
+	font-size: 20px;
+}
+
+.post, .post *
+{
+	font-size: 12px;
+	color: #666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.post a
+{
+	text-decoration: underline;
+}
+
+.entry-title a
+{
+	font-size: 24px;
+	color: #666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+ .entry-title a:hover
+{
+	font-size: 24px;
+	color: #666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+
+.entry-meta span 
+{
+	margin-right: 10px;
+}

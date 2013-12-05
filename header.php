@@ -21,20 +21,23 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="search" class="container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
+	<div id="topbar" class="container">
+		<div class="row">
+			<div class="col-xs-5 col-md-5">
 				<?php get_search_form(); ?>
+			</div>
+			<div class="col-xs-7 col-md-7 alignRight">
+				<?php chictweak_get_mailinglist_form(); ?>
 			</div>
 		</div>
 	</div>
 	<div id="page" class="hfeed site container">
 		<header id="masthead" class="site-header" role="banner">
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<?php /* <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> */?>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg"/>
 			</a>
-
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>

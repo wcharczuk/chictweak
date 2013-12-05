@@ -18,49 +18,12 @@
 		}
 	} );
 
-	/**
-	 * Enables menu toggle for small screens.
-	 */
-	( function() {
-		var nav = $( '#site-navigation' ), button, menu;
-		if ( ! nav )
-			return;
-
-		button = nav.find( '.menu-toggle' );
-		if ( ! button )
-			return;
-
-		// Hide button if menu is missing or empty.
-		menu = nav.find( '.nav-menu' );
-		if ( ! menu || ! menu.children().length ) {
-			button.hide();
-			return;
-		}
-
-		$( '.menu-toggle' ).on( 'click.twentythirteen', function() {
-			nav.toggleClass( 'toggled-on' );
-		} );
-	} )();
-
-	_window.on( 'hashchange.twentythirteen', function() {
-		var element = document.getElementById( location.hash.substring( 1 ) );
-
-		if ( element ) {
-			if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) )
-				element.tabIndex = -1;
-
-			element.focus();
-		}
-	} );
-
-	if ( $.isFunction( $.fn.masonry ) ) {
-		var columnWidth = body.is( '.sidebar' ) ? 228 : 245;
-
-		$( '#secondary .widget-area' ).masonry( {
-			itemSelector: '.widget',
-			columnWidth: columnWidth,
-			gutterWidth: 20,
-			isRTL: body.is( '.rtl' )
-		} );
-	}
+	$("#site-navigation ul.nav-menu li.menu-item").on("click", function() {
+		$(this).parent().find("ul.sub-menu").hide();
+		var $menu = $(this).find("ul.sub-menu");
+		$menu.show();
+		$menu.css("display", "block");
+		$(this).addClass("menu-open");
+		return !$(this).hasClass("menu-item-has-children");
+	})
 } )( jQuery );

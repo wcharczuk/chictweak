@@ -211,6 +211,21 @@ function chictweak_the_attached_image() {
 }
 endif;
 
+
+if ( ! function_exists( 'chictweak_get_mailinglist_form' ) ) :
+
+function chictweak_get_mailinglist_form() {
+?>
+<form role="mailinglist" method="post" class="mailinglist-form" action="http://www.chictweak.com/mailinglist">
+	<label for="emailAddress">JOIN OUR MAILING LIST!</label>
+	<input type="text" name="emailAddress" placeholder="Enter your name"/>
+	<input type="submit" value="Join"/>
+</form>
+<?php
+}
+
+endif;
+
 function chictweak_get_link_url() {
 	$content = get_the_content();
 	$has_url = get_url_in_content( $content );
