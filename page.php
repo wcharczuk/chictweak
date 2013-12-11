@@ -1,9 +1,7 @@
-<?php
-get_header(); 
-?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area content">
+		<div id="content" class="site-content row" role="main">
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -28,12 +26,9 @@ get_header();
 						<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post -->
-
-				<?php comments_template(); ?>
 			<?php endwhile; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

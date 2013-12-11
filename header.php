@@ -18,31 +18,33 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<link type="text/css" rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/style.css" />
+	<script src="<?php echo get_template_directory_uri(); ?>/js/chictweak.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
 	<div id="topbar" class="container">
 		<div class="row">
-			<div class="col-xs-5 col-md-5">
+			<div id="site-search" class="col-xs-6 col-md-6 col-lg-6">
 				<?php get_search_form(); ?>
 			</div>
-			<div class="col-xs-7 col-md-7 alignRight">
+			<div id="mailing-list" class="col-xs-6 col-md-6 col-lg-6">
 				<?php chictweak_get_mailinglist_form(); ?>
 			</div>
 		</div>
 	</div>
 	<div id="page" class="hfeed site container">
-		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php /* <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> */?>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg"/>
-			</a>
-			<div id="navbar" class="navbar">
+		<header id="masthead" class="site-header row" role="banner">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg"/>
+				</a>
+			</div>
+		</header><!-- #masthead -->
+		<div id="nav" class="row">
+			<div id="navbar" class="navbar col-xs-12 col-md-12 col-lg-12">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
-		</header><!-- #masthead -->
-
-		<div id="main" class="site-main row">
+		</div>

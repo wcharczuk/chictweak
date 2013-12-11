@@ -23,20 +23,15 @@ function chictweak_setup() {
 add_action( 'after_setup_theme', 'chictweak_setup' );
 
 function chictweak_scripts_styles() {
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
 
-	// Adds Masonry to handle vertical alignment of footer widgets.
-	if ( is_active_sidebar( 'sidebar-1' ) )
-		wp_enqueue_script( 'jquery-masonry' );
+	wp_enqueue_script( 'chictweak-script', get_template_directory_uri() . '/js/chictweak.js', array( 'jquery' ), '2013-12-01', true );
 
-	wp_enqueue_script( 'chictweak-script', get_template_directory_uri() . '/js/chicktweak.js', array( 'jquery' ), '2013-07-18', true );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 	
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array('chictweak-style'), '2013-11-19');
-	wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() . '/css/bootstrap.theme.css', array('chictweak-style'), '2013-11-19');
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '2013-11-19');
+	wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() . '/css/bootstrap.theme.css', array(), '2013-11-19');
 
-	wp_enqueue_style( 'chictweak-style', get_stylesheet_uri(), array(), '2013-07-18' );
+	//wp_enqueue_style( 'chictweak-style', get_stylesheet_uri(), array('bootstrap'), '2013-12-14' );
 }
 add_action( 'wp_enqueue_scripts', 'chictweak_scripts_styles' );
 
@@ -117,12 +112,13 @@ function chictweak_entry_meta() {
 	if ( ! has_post_format( 'link' ) && 'post' == get_post_type() )
 		chictweak_entry_date();
 
+/*
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list = get_the_category_list( __( ', ', 'chictweak' ) );
 	if ( $categories_list ) {
 		echo '<span class="categories-links">' . $categories_list . '</span>';
 	}
-
+*/
 	// Translators: used between list items, there is a space after the comma.
 	$tag_list = get_the_tag_list( '', __( ', ', 'chictweak' ) );
 	if ( $tag_list ) {
@@ -218,7 +214,7 @@ function chictweak_get_mailinglist_form() {
 ?>
 <form role="mailinglist" method="post" class="mailinglist-form" action="http://www.chictweak.com/mailinglist">
 	<label for="emailAddress">JOIN OUR MAILING LIST!</label>
-	<input type="text" name="emailAddress" placeholder="Enter your name"/>
+	<input type="text" name="emailAddress" placeholder="ENTER YOUR EMAIL"/>
 	<input type="submit" value="Join"/>
 </form>
 <?php

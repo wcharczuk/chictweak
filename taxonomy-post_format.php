@@ -1,19 +1,4 @@
-<?php
-/**
- * The template for displaying Post Format pages
- *
- * Used to display archive-type pages for posts with a post format.
- * If you'd like to further customize these Post Format views, you may create a
- * new template file for each specific one.
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -28,7 +13,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+			<?php chictweak_paging_nav(); ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>

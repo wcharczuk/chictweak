@@ -13,11 +13,6 @@
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
 		<?php endif; // is_single() ?>
-
-		<div class="entry-meta">
-			<?php chictweak_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'chictweak' ), '<span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -30,16 +25,14 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'chictweak' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-
-	<footer class="entry-meta">
-		<?php if ( comments_open() && ! is_single() ) : ?>
-			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'chictweak' ) . '</span>', __( 'One comment so far', 'chictweak' ), __( 'View all % comments', 'chictweak' ) ); ?>
-			</div><!-- .comments-link -->
-		<?php endif; // comments_open() ?>
-
-		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
-			<?php get_template_part( 'author-bio' ); ?>
-		<?php endif; ?>
-	</footer><!-- .entry-meta -->
+	
+	<div class="entry-meta">
+		<?php chictweak_entry_meta(); ?>
+		<?php edit_post_link( __( 'Edit', 'chictweak' ), '<span class="edit-link">', '</span>' ); ?>
+	</div><!-- .entry-meta -->
+	<footer class="post-social">
+		<a href="http://bookface/">Bookface</a>
+		<a href="http://twitter.com/">Twitter</a>
+		<a href="http://Pinterest/">Pinterest</a>
+	</footer>
 </article><!-- #post -->
