@@ -29,6 +29,24 @@
 	}).fail( function(response) {
 		$("#new-arrivals").hide();
 	});
+
+	$("#mailinglist_submit").on("click", function() {
+
+		var data = {};
+		data.eid = $("#mailinglist_eid").val();
+		data.firstname = "from_blog";
+		data.lastname = "from_blog";
+
+		var url = "<?php echo get_template_directory_uri(); ?>/mailinglist.php";
+		$.ajax({
+	       	url : url,
+	       	data: data,
+	       	method: "POST"
+		});
+
+		$("#mailinglist_eid").val("");
+		return false;
+	});
 })(jQuery);
 </script>
 </body>

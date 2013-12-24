@@ -212,10 +212,10 @@ if ( ! function_exists( 'chictweak_get_mailinglist_form' ) ) :
 
 function chictweak_get_mailinglist_form() {
 ?>
-<form role="mailinglist" method="post" class="mailinglist-form" action="http://www.chictweak.com/mailinglist">
-	<label for="emailAddress">JOIN OUR MAILING LIST!</label>
-	<input type="text" name="emailAddress" placeholder="ENTER YOUR EMAIL"/>
-	<input type="submit" value="Join"/>
+<form role="mailinglist" method="post" class="mailinglist-form" action"/">
+	<label for="eid">JOIN OUR MAILING LIST!</label>
+	<input id="mailinglist_eid" type="text" name="eid" placeholder="ENTER YOUR EMAIL"/>
+	<input id="mailinglist_submit" type="button" value="Join"/>
 </form>
 <?php
 }
