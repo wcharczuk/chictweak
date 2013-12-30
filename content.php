@@ -31,8 +31,9 @@
 		<?php edit_post_link( __( 'Edit', 'chictweak' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-meta -->
 	<footer class="post-social">
-		<a href="http://bookface/">Bookface</a>
-		<a href="http://twitter.com/">Twitter</a>
-		<a href="http://Pinterest/">Pinterest</a>
+		<a class="social-share social-share-facebook" target="_blank" href="http://facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"></a>
+		<a class="social-share social-share-twitter" target="_blank"href="http://twitter.com/share?url=<?php echo urlencode(get_permalink()); ?>"></a>
+		<!--<a class="social-share social-share-tumblr" target="_blank" href="http://tumblr.com/"></a>-->
+		<!--<a class="social-share social-share-pinterest" target="_blank" href="http://pinterest.com/"></a>-->
 	</footer>
 </article><!-- #post -->

@@ -330,6 +330,51 @@ a:hover
 .post .entry-header
 {
 	margin-bottom: 25px;
+} 
+
+
+.post .post-social {
+	margin-top: 10px;
+}
+
+.social-share {
+	width:18px;
+	height:18px;
+	display:inline-block;
+
+	background: transparent url("images/social-share-icons.png") no-repeat scroll 0px 0px;
+}
+
+.social-share-facebook {
+	background-position: left 0px top 0px;
+}
+
+.social-share-facebook:hover {
+	background-position: left 0px bottom 0px;
+}
+
+.social-share-twitter {
+	background-position: left -20px top 0px;
+}
+
+.social-share-twitter:hover {
+	background-position: left -20px bottom 0px;
+}
+
+.social-share-tumblr {
+	background-position: left -40px top 0px;
+}
+
+.social-share-tumblr:hover {
+	background-position: left -40px bottom 0px;
+}
+
+.social-share-pinterest {
+	background-position: left -59px top 0px;
+}
+
+.social-share-pinterest:hover {
+	background-position: left -59px bottom 0px;
 }
 
 .entry-title
