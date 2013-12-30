@@ -25,7 +25,8 @@
 			document.getElementById("gallery").appendChild(li);
 		});
 
-		$("#gallery").cycle();
+		$("#gallery").cycle({ next: "#gallery-next", prev: "#gallery-previous" });
+
 	}).fail( function(response) {
 		$("#new-arrivals").hide();
 	});

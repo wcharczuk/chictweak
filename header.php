@@ -42,9 +42,13 @@
 			</div>
 		</header><!-- #masthead -->
 		<div id="nav" class="row">
-			<div id="navbar" class="navbar col-xs-12 col-md-12 col-lg-12">
+			<div id="navbar" class="navbar col-xs-7 col-md-7 col-lg-7">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
+			<div id="shop-here" class="col-xs-5 col-md-5 col-lg-5">
+				<a href="http://www.chictweak.com" target="_blank">shop here</a>
+				<div id="shipping">Free shipping on orders over $75</div>
+			</div>
 		</div>

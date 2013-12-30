@@ -5,14 +5,14 @@ body
 	padding-top: 10px;
 
 	/* fonts */
-	color: #666 !important;
+	color: #555 !important;
 	font-size: 12px !important;
 	font-family: Georgia, "Times New Roman", Times, serif !important;
 }
 
 a
 {
-	color: #666;
+	color: #555;
 	text-decoration: underline;
 }
 
@@ -172,7 +172,7 @@ a:hover
 
 #shop-here
 {
-	margin-bottom: 10px;
+	text-align: center;
 	font-style: italic;
 	font-size: 15px;
 }
@@ -213,11 +213,12 @@ a:hover
 
 #new-arrivals
 {
+	margin-top: 10px;
 	text-align: center;
+	height: 250px;
 }
 
-
-#new-arrivals-header
+#new-arrivals-header, #social-header 
 {
 	font-weight: bold;
 	font-size: 18px;
@@ -225,9 +226,28 @@ a:hover
 
 #gallery
 {
+	display:inline-block;
+
 	width:150px;
-	margin-left: auto;
-	margin-right: auto;
+	height:200px;
+}
+
+#gallery-previous, #gallery-next 
+{
+	display:inline-block;
+	width: 20px;
+	height: 200px;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#gallery-previous
+{
+	background: transparent url("images/prev.png") no-repeat scroll 0px 90px;
+}
+#gallery-next
+{
+	background: transparent url("images/next.png") no-repeat scroll 0px 90px;
 }
 
 #gallery li 
@@ -242,7 +262,7 @@ a:hover
 
 #social
 {
-	text-align: left;
+	text-align: center;
 	width:150px;
 	margin-left: auto;
 	margin-right: auto;
@@ -250,8 +270,57 @@ a:hover
 
 #social-links
 {
+	display:inline-block;
+	text-align: left;
 	list-style: none;
+	padding: 0;
 }
+
+.social-icon
+{
+	height:90px;
+	width:90px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.social-facebook {
+	background: transparent url("images/social-facebook.png") no-repeat scroll 0px 0px;
+}
+
+.social-facebook:hover {
+	background: transparent url("images/social-facebook-hover.png") no-repeat scroll 0px 0px;
+}
+
+.social-instagram {
+	background: transparent url("images/social-instagram.png") no-repeat scroll 0px 0px;
+}
+
+.social-instagram:hover {
+	background: transparent url("images/social-instagram-hover.png") no-repeat scroll 0px 0px;
+}
+
+.social-twitter {
+	background: transparent url("images/social-twitter.png") no-repeat scroll 0px 0px;
+}
+
+.social-twitter:hover {
+	background: transparent url("images/social-twitter-hover.png") no-repeat scroll 0px 0px;
+}
+
+.social-pinterest {
+	background: transparent url("images/social-pinterest.png") no-repeat scroll 0px 0px;
+}
+
+.social-pinterest:hover {
+	background: transparent url("images/social-pinterest-hover.png") no-repeat scroll 0px 0px;
+}
+
+#content { margin-top: -50px;}
+
+.post { text-align: center; }
 
 .post a
 {
@@ -266,7 +335,7 @@ a:hover
 .entry-title
 {
 	font-size: 24px;
-	color: #666;
+	color: #555;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
 }
