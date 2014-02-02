@@ -48,7 +48,7 @@
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 			<div id="shop-here" class="col-xs-5 col-md-5 col-lg-5">
-				<a href="http://www.chictweak.com" target="_blank">shop here</a>
+				<a id="shop-here-img" href="http://www.chictweak.com" target="_blank"></a>
 				<div id="shipping">Free shipping on orders over $75</div>
 			</div>
 		</div>

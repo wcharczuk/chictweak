@@ -186,38 +186,18 @@ a:hover
 	font-size: 15px;
 }
 
-#shop-here > a
-{
-	display: inline-block;
-
-	height: 100px;
-	width: 150px;
-
-	padding-top: 8px;
+#shop-here-img {
+	display: block;
+	background: url(images/shop-here.png) no-repeat top left ;
+	height: 200px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 10px;
-
-	background-color: #e50278;
-
-	font-family: Helvetica, Arial, sans-serif;
-	font-style: normal;
-	
-	font-size: 35px;
-	line-height: 45px;
-
-	font-weight: 100;
-
-	text-align: center;
-
-	color: #FFF;
-	text-decoration: none;
-	text-transform: uppercase;
 }
 
-#shop-here > a:hover
-{
-	text-decoration: none;
-	background-color: #FFF;
-	color: #e50278;
+#shop-here-img:hover {
+	background: url(images/shop-here.gif) no-repeat top left ;
 }
 
 #new-arrivals
@@ -327,7 +307,7 @@ a:hover
 	background: transparent url("images/social-pinterest-hover.png") no-repeat scroll 0px 0px;
 }
 
-#content { margin-top: -50px;}
+#content { margin-top: -200px;}
 
 .post { text-align: center; }
 
