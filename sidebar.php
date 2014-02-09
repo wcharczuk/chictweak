@@ -8,10 +8,10 @@
 	<div id="social">
 		<div id="social-header">Find Us On:</div>
 		<ul id="social-links">
-			<li><a href="http://facebook.com/tweakyourstyle"><div class="social-icon social-facebook"></div></a></li>
-			<li><a href="http://instagram.com/chictweak"><div class="social-icon social-instagram"></div></a></li>
-			<li><a href="http://twitter.com/chictweak"><div class="social-icon social-twitter"></div></a></li>
-			<li><a href="http://pinterest.com/chictweak"><div class="social-icon social-pinterest"></div></a></li>
+			<li><a href="http://facebook.com/tweakyourstyle"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-facebook.png"/></a></li>
+			<li><a href="http://instagram.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-instagram.png"/></a></li>
+			<li><a href="http://twitter.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-twitter.png"/></a></li>
+			<li><a href="http://pinterest.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-pinterest.png"/></a></li>
 		</ul>
 	</div>
 </div>
