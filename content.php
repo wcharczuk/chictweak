@@ -5,13 +5,13 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<?php endif; ?>
-
+		<?php chictweak_entry_date(); ?>
 		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="entry-title"><?php the_title(); ?></div>
 		<?php else : ?>
-		<h1 class="entry-title">
+		<div class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-		</h1>
+		</div>
 		<?php endif; // is_single() ?>
 	</header><!-- .entry-header -->
 

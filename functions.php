@@ -109,16 +109,6 @@ function chictweak_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() )
 		echo '<span class="featured-post">' . __( 'Sticky', 'chictweak' ) . '</span>';
 
-	if ( ! has_post_format( 'link' ) && 'post' == get_post_type() )
-		chictweak_entry_date();
-
-/*
-	// Translators: used between list items, there is a space after the comma.
-	$categories_list = get_the_category_list( __( ', ', 'chictweak' ) );
-	if ( $categories_list ) {
-		echo '<span class="categories-links">' . $categories_list . '</span>';
-	}
-*/
 	// Translators: used between list items, there is a space after the comma.
 	$tag_list = get_the_tag_list( '', __( ', ', 'chictweak' ) );
 	if ( $tag_list ) {

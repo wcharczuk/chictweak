@@ -14,4 +14,9 @@
 			<li><a href="http://pinterest.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-pinterest.png"/></a></li>
 		</ul>
 	</div>
+	<div id="feed">
+		<h3>
+			<a href="<?php bloginfo('rss2_url'); ?>">Subscribe!</a>
+		</h3>
+	</div>
 </div>

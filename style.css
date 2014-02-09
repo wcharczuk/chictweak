@@ -273,7 +273,7 @@ a:hover
 
 }
 
-#content { margin-top: -200px;}
+#content { margin-top: -150px;}
 
 .post { text-align: center; }
 
@@ -287,7 +287,40 @@ a:hover
 	margin-bottom: 25px;
 } 
 
+.entry-header .date a {
+	font-size: 11px;
+	display: block;
+	font-weight: normal;
+	line-height: 25px;
+	letter-spacing: 1px;
+	text-rendering: optimizelegibility;
+	text-decoration: none !important;
+}
 
+.entry-title > a
+{
+	font-size: 24px;
+	line-height: 28px;
+	color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-decoration: none !important;
+	text-align: center;
+}
+
+.entry-title > a {
+	text-decoration: none !important;
+}
+
+.entry-title > a:hover {
+	color: #ff0085;
+}
+
+.entry-meta span 
+{
+	margin-right: 10px;
+}
+
+/* SOCIAL */
 .post .post-social {
 	margin-top: 10px;
 }
@@ -332,22 +365,17 @@ a:hover
 	background-position: left -59px bottom 0px;
 }
 
-.entry-title
+#feed { text-align: center; }
+#feed a
 {
-	font-size: 24px;
-	color: #555;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	text-decoration: none;
-}
+	background: url('images/rss.png') no-repeat right center;
+	padding-right: 25px;
+	padding-left: 18px;
 
-.entry-title a:hover
-{
-	text-decoration: none;
-}
+	font-size: 18px;
+	line-height: 22px;
 
-.entry-meta span 
-{
-	margin-right: 10px;
+	text-decoration: none !important;
 }
 
 .site-footer
