@@ -186,18 +186,12 @@ a:hover
 	font-size: 15px;
 }
 
-#shop-here-img {
-	display: block;
-	background: url(images/shop-here.png) no-repeat top left ;
-	height: 200px;
-	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-}
-
-#shop-here-img:hover {
-	background: url(images/shop-here.gif) no-repeat top left ;
+#shop-here-img 
+{
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	margin-bottom: 20px;
 }
 
 #new-arrivals
@@ -267,8 +261,8 @@ a:hover
 
 .social-icon
 {
-	height:90px;
-	width:90px;
+	height:100px;
+	width:100px;
 	margin-top:5px;
 	margin-bottom:5px;
 	margin-left:auto;
@@ -279,33 +273,33 @@ a:hover
 	background: transparent url("images/social-facebook.png") no-repeat scroll 0px 0px;
 }
 
-.social-facebook:hover {
+/*.social-facebook:hover {
 	background: transparent url("images/social-facebook-hover.png") no-repeat scroll 0px 0px;
-}
+} */
 
 .social-instagram {
 	background: transparent url("images/social-instagram.png") no-repeat scroll 0px 0px;
 }
 
-.social-instagram:hover {
+/*.social-instagram:hover {
 	background: transparent url("images/social-instagram-hover.png") no-repeat scroll 0px 0px;
-}
+} */
 
 .social-twitter {
 	background: transparent url("images/social-twitter.png") no-repeat scroll 0px 0px;
 }
 
-.social-twitter:hover {
+/*.social-twitter:hover {
 	background: transparent url("images/social-twitter-hover.png") no-repeat scroll 0px 0px;
-}
+}*/
 
 .social-pinterest {
 	background: transparent url("images/social-pinterest.png") no-repeat scroll 0px 0px;
 }
 
-.social-pinterest:hover {
+/*.social-pinterest:hover {
 	background: transparent url("images/social-pinterest-hover.png") no-repeat scroll 0px 0px;
-}
+} */
 
 #content { margin-top: -200px;}
 

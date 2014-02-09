@@ -48,7 +48,9 @@
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 			<div id="shop-here" class="col-xs-5 col-md-5 col-lg-5">
-				<a id="shop-here-img" href="http://www.chictweak.com" target="_blank"></a>
+				<a id="shop-here-link" href="http://www.chictweak.com" target="_blank">
+					<img id="shop-here-img" src="<?php echo get_template_directory_uri(); ?>/images/shop-here.png" on-hover-src="<?php echo get_template_directory_uri(); ?>/images/shop-here.gif" alt="shop here!"/>
+				</a>
 				<div id="shipping">Free shipping on orders over $75</div>
 			</div>
 		</div>

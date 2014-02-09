@@ -48,6 +48,13 @@
 		$("#mailinglist_eid").val("");
 		return false;
 	});
+
+	$("img[on-hover-src]").hover(function() {
+		$(this).attr("off-hover-src", $(this).attr("src"));
+		$(this).attr("src", $(this).attr("on-hover-src"));
+	}, function() {
+		$(this).attr("src", $(this).attr("off-hover-src"));
+	});
 })(jQuery);
 </script>
 </body>
