@@ -12,3 +12,5 @@ This is the theme to be deployed for [chictweak](http://www.chictweak.com)'s new
 Then, in word press admin (/wp-admin/themes.php) select the chictweak theme.
 
 Done!
+
+NOTE: This blog is visible on http://blog.chictweak.com
