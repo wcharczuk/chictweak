@@ -15,8 +15,6 @@
 		</ul>
 	</div>
 	<div id="feed">
-		<h3>
-			<a href="<?php bloginfo('rss2_url'); ?>">Subscribe!</a>
-		</h3>
+		<a href="<?php bloginfo('rss2_url'); ?>">Subscribe!</a>
 	</div>
 </div>

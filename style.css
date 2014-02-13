@@ -368,6 +368,9 @@ a:hover
 #feed { text-align: center; }
 #feed a
 {
+	font-weight: bold;
+	font-size: 18px;
+	
 	background: url('images/rss.png') no-repeat right center;
 	padding-right: 25px;
 	padding-left: 18px;
