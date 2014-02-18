@@ -278,6 +278,12 @@ a:hover
 
 #content { margin-top: -150px;}
 
+.page-header {}
+.page-header .page-title { 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
 .post {
 	text-align: center; 
 	margin-top: 50px;
@@ -324,6 +330,10 @@ a:hover
 .entry-meta span 
 {
 	margin-right: 10px;
+}
+
+.entry-content.entry-content-empty {
+	min-height: 300px;
 }
 
 /* SOCIAL */
