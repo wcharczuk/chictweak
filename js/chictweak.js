@@ -6,6 +6,8 @@
 	$.fn.NavMenu = function (options) {
 		options = options || {};
 
+		var timeout = {};
+
 		var hideAllMenus = function() {
 			$(".nav-menu-showing").each(function()
 			{
@@ -13,33 +15,42 @@
 			});
 		};
 
-		var hideMenu = function(elem) {
-			var subMenu = $(elem).find(".sub-menu");
-			elem.removeClass("nav-menu-showing");
+		var hideMenu = function($elem) {
+			var subMenu = $elem.find(".sub-menu");
+			$elem.removeClass("nav-menu-showing");
 			subMenu.hide();
 		};
 
-		var openMenu = function(elem) {
+		var openMenu = function($elem) {
 			hideAllMenus();
-			if(!$(elem).hasClass("nav-menu-showing")) {
-				var subMenu = $(elem).find(".sub-menu");
-				subMenu.css("display", "block");
-				positionSubMenuToParent(elem, subMenu);
-				elem.addClass("nav-menu-showing");
-				subMenu.find("li").css("display", "block");
-				subMenu.show();
+			if(!$elem.hasClass("nav-menu-showing")) {
+				var $subMenu = $elem.find(".sub-menu");
+				$subMenu.css("display", "block");
+				positionSubMenuToParent($elem, $subMenu);
+				$elem.addClass("nav-menu-showing");
+				$subMenu.find("li").css("display", "block");
+
+				$subMenu.hover(function() {
+					clearTimeout(timeout);
+				}, function() {
+					timeout = setTimeout(function() {
+						hideMenu($elem);
+					}, 50);
+				});
+
+				$subMenu.show();
 			}
 		};
 
-		var positionSubMenuToParent = function(parent, subMenu) {
-			$(subMenu).css("position", "absolute");
+		var positionSubMenuToParent = function($parent, $subMenu) {
+			$subMenu.css("position", "absolute");
 
-			var parentPosition = $(parent).offset();
+			var parentPosition = $parent.offset();
 
-			var menuTop = parentPosition.top + $(parent).height();
+			var menuTop = parentPosition.top + $parent.height();
 			var menuLeft = parentPosition.left;
 
-			$(subMenu).offset({ top : menuTop, left: menuLeft });
+			$subMenu.offset({ top : menuTop, left: menuLeft });
 		};
 
 		$( "body" ).on("click", function() {
@@ -52,18 +63,15 @@
 			$(this).find(".sub-menu").hide();
 
 			$(this).hover(function(e) {
-				if($(this).hasClass("menu-item-has-children")) {
-					if($(this).hasClass("nav-menu-showing")) {
-						hideMenu($(this));
-					}
-					else {
-						openMenu($(this));
-					}
+				clearTimeout(timeout);
+				$that = $(this);
+				if($that.hasClass("menu-item-has-children")) {
+					openMenu($that);
 				}
-			}, function(e) {
-				if($(this).hasClass("menu-item-has-children")) {
-					hideMenu($(this));
-				}
+			}, function() {
+				timeout = setTimeout(function() {
+						hideMenu($that);
+					}, 50);
 			});
 		})
 	}
@@ -73,7 +81,6 @@
 
 ( function( $ ) {
     // initalization code.
-
     $(document).on("ready", function() {
     	$("#menu-main-navigation li").NavMenu();
 	});

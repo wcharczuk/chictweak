@@ -10,7 +10,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.all.js"></script>
 <script type="text/javascript">
 (function($) {
-
 	$.get( "<?php echo get_template_directory_uri(); ?>/new_arrivals.php", function( response ) {
 
 		$.each(response, function(key, val) {

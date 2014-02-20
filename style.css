@@ -286,7 +286,13 @@ a:hover
 
 .post {
 	text-align: center; 
-	margin-top: 50px;
+	margin-top: 40px;
+	border-bottom: 1px solid #000;
+}
+
+.post:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
 }
 
 .post a
@@ -325,6 +331,11 @@ a:hover
 
 .entry-title > a:hover {
 	color: #ff0085;
+}
+
+.entry-meta
+{
+	margin-top: 40px;
 }
 
 .entry-meta span 
