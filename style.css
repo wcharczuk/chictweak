@@ -285,7 +285,6 @@ a:hover
 }
 
 .post {
-	text-align: center; 
 	margin-top: 40px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #000;
@@ -301,9 +300,10 @@ a:hover
 	text-decoration: underline;
 }
 
-.post .entry-header
+.entry-header
 {
 	margin-bottom: 25px;
+	text-align: center; 
 } 
 
 .entry-header .date a {
@@ -349,14 +349,7 @@ a:hover
 }
 
 .entry-content {
-	text-align: left;
 	font-size: 14px;
-}
-
-.entry-content p > img.alignCenter {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /* SOCIAL */
