@@ -10,6 +10,8 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.chictweak.com/images/favicon.ico">
+	<meta property="og:image" content="http://www.chictweak.com/images/logo.gif">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
