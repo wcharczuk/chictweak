@@ -498,6 +498,10 @@ a:hover
 	text-decoration: none !important;
 }
 
+.navigation {
+	margin-top: 20px;
+}
+
 .post-navigation  {
 	margin-top: 20px;
 	text-align: center;
