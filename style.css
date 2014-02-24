@@ -227,11 +227,13 @@ a:hover
 
 #sidebar
 {
+	min-width: 213px;
 	text-align: center;
 }
 
 #shop-here
 {
+	min-width: 213px;
 	text-align: center;
 	font-style: italic;
 	font-size: 15px;
