@@ -359,6 +359,7 @@ a:hover
 
 .post-readmore 
 {
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -368,7 +369,10 @@ a:hover
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-right: 10px;
+	text-decoration: none;
 }
+
+.post-readmore a:hover { }
 
 .social-share {
 	width:18px;
