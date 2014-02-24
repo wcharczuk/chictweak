@@ -16,7 +16,15 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'chictweak' ) ); ?>
+		<?php 
+		if ( is_home() || is_search() ) {
+			//the_excerpt();
+			the_content();
+		}
+		else {
+			the_content();
+		}
+		?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'chictweak' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	
@@ -27,7 +35,5 @@
 	<footer class="post-social">
 		<a class="social-share social-share-facebook" target="_blank" href="http://facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"></a>
 		<a class="social-share social-share-twitter" target="_blank"href="http://twitter.com/share?url=<?php echo urlencode(get_permalink()); ?>"></a>
-		<!--<a class="social-share social-share-tumblr" target="_blank" href="http://tumblr.com/"></a>-->
-		<!--<a class="social-share social-share-pinterest" target="_blank" href="http://pinterest.com/"></a>-->
 	</footer>
 </article><!-- #post -->
