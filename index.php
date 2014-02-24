@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<div id="main" class="content-area row">
-		<div id="content" class="site-content col-xs-9 col-md-9 col-lg-9" role="main">
+		<div id="content" class="site-content col-xs-8 col-md-9 col-lg-9" role="main">
 			<?php if ( have_posts() ) : ?>
 				<?php /* The loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>

@@ -37,12 +37,12 @@
 	</div>
 	<div id="page" class="hfeed site container">
 		<header id="masthead" class="site-header row" role="banner">
-			<div class="col-xs-9 col-md-9 col-lg-9">
+			<div class="col-xs-8 col-md-9 col-lg-9">
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg"/>
 				</a>
 			</div>
-			<div id="shop-here" class="col-xs-3 col-md-3 col-lg-3">
+			<div id="shop-here" class="col-xs-4 col-md-3 col-lg-3">
 				<a id="shop-here-link" href="http://www.chictweak.com" target="_blank">
 					<img id="shop-here-img" src="<?php echo get_template_directory_uri(); ?>/images/shop-here.png" on-hover-src="<?php echo get_template_directory_uri(); ?>/images/shop-here.gif" alt="shop here!"/>
 				</a>
@@ -50,11 +50,11 @@
 			</div>
 		</header><!-- #masthead -->
 		<div id="nav" class="row">
-			<div id="navbar" class="navbar col-xs-9 col-md-9 col-lg-9">
+			<div id="navbar" class="navbar col-xs-8 col-md-9 col-lg-9">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
-			<div class="col-xs-3 col-md-3 col-lg-3">
+			<div class="col-xs-4 col-md-3 col-lg-3">
 			</div>
 		</div>

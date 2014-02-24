@@ -1,4 +1,4 @@
-<div id="sidebar" class="col-xs-3 col-md-3 col-lg-3" role="sidebar">
+<div id="sidebar" class="col-xs-4 col-md-3 col-lg-3" role="sidebar">
 	<div id="new-arrivals">
 		<div id="new-arrivals-header">New Arrivals</div>
 		<div id="gallery-previous"></div>
