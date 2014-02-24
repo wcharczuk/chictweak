@@ -1,10 +1,12 @@
 		<footer id="colophon" class="site-footer row" role="contentinfo">
-			<div class="col-xs-6 col-md-6">&copy; <?php echo date("Y"); ?></div>
-			<div class="col-xs-6 col-md-6">
+			<div class="col-xs-9 col-md-9 col-lg-9">
+				<span class="cc-date">&copy; <?php echo date("Y"); ?></span>
 				<a href="www.chictweak.com" target="_blank">Home</a>
-				- <a href="www.chictweak.com/privacy" target="_blank">Privacy Policy</a>
-				- <a href="www.chictweak.com/privacy" target="_blank">Terms of Use</a>
+					- <a href="www.chictweak.com/privacy" target="_blank">Privacy Policy</a>
+					- <a href="www.chictweak.com/privacy" target="_blank">Terms of Use</a>
+				</div>
 			</div>
+			<div class="col-xs-3 col-md-3 col-lg-3"></div>
 		</footer>
 	</div> <!-- #page -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.all.js"></script>

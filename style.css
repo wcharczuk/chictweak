@@ -9,6 +9,13 @@ Version: 1.0
 
 */
 
+/* utility styles */
+
+.hide { display: none; }
+.block { display: block; }
+.alignRight { text-align: right !important; }
+.alignCenter { text-align: center; }
+
 /* elements */
 
 body
@@ -16,9 +23,9 @@ body
 	padding-top: 10px;
 
 	/* fonts */
-	color: #555 !important;
-	font-size: 12px !important;
-	font-family: Georgia, "Times New Roman", Times, serif !important;
+	color: #555;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 a
@@ -33,13 +40,34 @@ a:hover
 	text-decoration: none;
 }
 
-.alignRight { text-align: right !important; }
-.alignCenter { text-align: center; }
 
-#topbar { }
-#topbar .screen-reader-text { display: none;}
+#topbar 
+{ 
+	height: 45px;
+}
 
-#mailing-list { text-align: right; }
+#topbar .row 
+{
+	height: 45px;
+}
+
+#topbar #site-search {
+	line-height: 45px;
+}
+
+
+#topbar .screen-reader-text { display: none; }
+
+#mailing-list 
+{
+	text-align: right; 
+	height: 45px;
+	line-height: 45px;
+}
+
+#topbar input {
+	line-height: normal;
+}
 
 #topbar .search-form, #topbar .mailinglist-form { display: inline-block; }
 
@@ -70,6 +98,17 @@ a:hover
 	width: 400px;
 }
 
+#mailing-list label {
+	margin-right: 5px;
+}
+
+#mailinglist_eid {
+	font-size: 10px;
+	padding-left: 10px;
+	width: 150px;
+	height: 25px;
+}
+
 #masthead 
 { 
 	margin: 25px 0 10px 0; 
@@ -86,24 +125,29 @@ a:hover
     height: 130px;
 }
 
+#nav 
+{
+	text-align:center;
+}
+
 #site-navigation ul 
 { 
 	list-style: none; 
 	display: inline-block;
+	padding: 0;
 }
 
 #site-navigation ul.nav-menu > li.menu-item
 {
 	margin-top:2px;
-
 	background-color: #fff;
 }
 
 #site-navigation ul.nav-menu > li.menu-item > a
 {
 	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0px;
+	padding-right: 20px;
 
 	background-color: #FFF;
 
@@ -131,6 +175,11 @@ a:hover
 {
 	display:inline-block;
 	margin-right: 10px;
+}
+
+#site-navigation ul.nav-menu li.menu-item:last-child
+{
+	margin-right: 0;
 }
 
 #site-navigation ul.sub-menu 
@@ -169,9 +218,6 @@ a:hover
 	color: #FFF;
 	text-decoration: none;
 }
-
-.hide { display: none; }
-.block { display: block; }
 
 .home-link
 {
@@ -274,16 +320,14 @@ a:hover
 	margin-right:auto;
 }
 
-.social-icon:hover {
+.social-icon:hover {}
 
-}
-
-#content { margin-top: -150px;}
+#content { }
 
 .page-header {}
+
 .page-header .page-title { 
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .post {
@@ -323,13 +367,8 @@ a:hover
 	font-size: 24px;
 	line-height: 28px;
 	color: #000;
-	font-family: Georgia, "Times New Roman", Times, serif;
 	text-decoration: none !important;
 	text-align: center;
-}
-
-.entry-title > a {
-	text-decoration: none !important;
 }
 
 .entry-title > a:hover {
@@ -347,18 +386,16 @@ a:hover
 	margin-right: 10px;
 }
 
+.entry-meta .tags-links a {
+	text-decoration: none;
+}
+
 .entry-content.entry-content-empty {
 	min-height: 300px;
 }
 
 .entry-content {
 	font-size: 14px;
-}
-
-/* SOCIAL */
-.post-social {
-	text-align: center;
-	margin-top: 10px;
 }
 
 .post-readmore 
@@ -377,6 +414,33 @@ a:hover
 }
 
 .post-readmore a:hover { }
+
+/* SOCIAL */
+
+.post-social {
+	
+	margin-top: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+.post-social-callout {
+	display:inline-block;
+
+	width: 100px;
+	height: 18px;
+	
+	margin-right: 0px;
+	margin-left: -100px;
+
+	text-align: right;
+}
+
+.post-social-icons {
+	display: inline-block;
+	vertical-align: text-bottom;
+	height: 18px;
+}
 
 .social-share {
 	width:18px;
@@ -444,4 +508,9 @@ a:hover
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+.cc-date
+{
+	margin-right: 5px;
 }

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<div id="main" class="content-area row">
-		<div id="content" class="site-content col-xs-8 col-md-8 col-lg-8" role="main">
+		<div id="content" class="site-content col-xs-9 col-md-9 col-lg-9" role="main">
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
 			</header>

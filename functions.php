@@ -110,8 +110,12 @@ function chictweak_entry_meta() {
 	if ( $tag_list ) {
 		echo '<span class="tags-links">' . $tag_list . '</span>';
 	}
+}
+endif;
 
-	// Post author
+if ( ! function_exists ( 'chictweak_author') ) :
+
+function chictweak_author() {
 	if ( 'post' == get_post_type() ) {
 		printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
@@ -120,6 +124,7 @@ function chictweak_entry_meta() {
 		);
 	}
 }
+
 endif;
 
 if ( ! function_exists( 'chictweak_entry_date' ) ) :

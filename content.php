@@ -25,7 +25,10 @@
 		<?php edit_post_link( __( 'Edit', 'chictweak' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-meta -->
 	<footer class="post-social">
-		<a class="social-share social-share-facebook" target="_blank" href="http://facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"></a>
-		<a class="social-share social-share-twitter" target="_blank"href="http://twitter.com/share?url=<?php echo urlencode(get_permalink()); ?>"></a>
+		<div class="post-social-callout">Share!</div>
+		<div class="post-social-icons">
+			<a class="social-share social-share-facebook" target="_blank" href="http://facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"></a>
+			<a class="social-share social-share-twitter" target="_blank"href="http://twitter.com/share?url=<?php echo urlencode(get_permalink()); ?>"></a>
+		</div>
 	</footer>
 </article><!-- #post -->
