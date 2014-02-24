@@ -12,6 +12,7 @@
 			<li><a href="http://instagram.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-instagram.png"/></a></li>
 			<li><a href="http://twitter.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-twitter.png"/></a></li>
 			<li><a href="http://pinterest.com/chictweak"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-pinterest.png"/></a></li>
+			<li><a href="http://chictweak.tumblr.com"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/images/social-tumblr.png"/></a></li>
 		</ul>
 	</div>
 	<div id="feed">
