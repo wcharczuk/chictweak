@@ -357,6 +357,19 @@ a:hover
 	margin-top: 10px;
 }
 
+.post-readmore 
+{
+	text-align: center;
+}
+
+.post-readmore a {
+	border: 1px solid #666;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 10px;
+}
+
 .social-share {
 	width:18px;
 	height:18px;
