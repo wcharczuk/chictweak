@@ -353,6 +353,12 @@ a:hover
 	font-size: 14px;
 }
 
+.entry-content p > img.alignCenter {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* SOCIAL */
 .post .post-social {
 	margin-top: 10px;
