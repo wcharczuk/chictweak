@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content('<span class="moretext">Read More</span>'); ?>
+		<?php the_content('<div class="post-readmore">Read More</div>'); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'chictweak' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	
