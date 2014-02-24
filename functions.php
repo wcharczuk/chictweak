@@ -215,7 +215,15 @@ function chictweak_get_link_url() {
 	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
 
-function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+//better excerpt
+if ( ! function_exists( 'chictweak_excerpt ') ) :
+
+function chictweak_excerpt() {
+	$content = get_the_content();
+	$content = apply_filters ( 'the_content', $content );
+	$content = str_replace ( ']]>', ']]&gt;', $content );
+
+
 }
-add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+endif;
