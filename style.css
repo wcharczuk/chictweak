@@ -348,11 +348,6 @@ a:hover
 	text-decoration: underline;
 }
 
-.entry-header
-{
-	margin-bottom: 25px;
-	text-align: center; 
-} 
 
 .entry-header .date a {
 	font-size: 11px;
@@ -364,9 +359,13 @@ a:hover
 	text-decoration: none !important;
 }
 
+.entry-title {
+	font-size: 24px;
+}
+
 .entry-title > a
 {
-	font-size: 24px;
+	font-size: 24px !important;
 	line-height: 28px;
 	color: #000;
 	text-decoration: none !important;
@@ -375,6 +374,12 @@ a:hover
 
 .entry-title > a:hover {
 	color: #ff0085;
+}
+
+.entry-header
+{
+	margin-bottom: 25px;
+	text-align: center; 
 }
 
 .entry-meta
