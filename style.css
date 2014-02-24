@@ -348,6 +348,10 @@ a:hover
 	min-height: 300px;
 }
 
+.entry-content {
+	text-align: left;
+}
+
 /* SOCIAL */
 .post .post-social {
 	margin-top: 10px;

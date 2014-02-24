@@ -16,15 +16,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php 
-		if ( is_home() || is_search() ) {
-			//the_excerpt();
-			the_content();
-		}
-		else {
-			the_content();
-		}
-		?>
+		<?php the_content('<span class="moretext">Read More</span>'); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'chictweak' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	

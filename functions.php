@@ -215,15 +215,4 @@ function chictweak_get_link_url() {
 	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
 
-//better excerpt
-if ( ! function_exists( 'chictweak_excerpt ') ) :
 
-function chictweak_excerpt() {
-	$content = get_the_content();
-	$content = apply_filters ( 'the_content', $content );
-	$content = str_replace ( ']]>', ']]&gt;', $content );
-
-
-}
-
-endif;
