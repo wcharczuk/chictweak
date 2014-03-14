@@ -77,12 +77,3 @@
 	}
 }
 )( jQuery );
-
-
-( function( $ ) {
-    // initalization code.
-    $(document).on("ready", function() {
-    	$("#menu-main-navigation li").NavMenu();
-	});
-
-} )( jQuery );

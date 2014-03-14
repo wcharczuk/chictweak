@@ -31,16 +31,15 @@ body
 
 a
 {
-	color: #555;
-	text-decoration: underline;
+	color: #555 !important;
+	text-decoration: underline !important;
 }
 
 a:hover
 {
-	color: #ff0085;
-	text-decoration: none;
+	color: #ff0085 !important;
+	text-decoration: none !important;
 }
-
 
 #topbar 
 { 
@@ -153,15 +152,15 @@ a:hover
 
 	background-color: #FFF;
 
-	color: #666;
+	color: #666 !important;
 	font-size: 20px;
 
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 #site-navigation ul.nav-menu > li.nav-menu-showing > a
 {
-	text-decoration: none;
+	text-decoration: none !important;
 
 	-webkit-box-shadow: 1px 1px 3px 0px rgba(00, 00, 00, .15);
 	-moz-box-shadow: 1px 1px 3px 0px rgba(00, 00, 00, .15);
@@ -170,7 +169,7 @@ a:hover
 
 #site-navigation ul.nav-menu > li.nav-menu-showing > a:hover
 {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 #site-navigation ul.nav-menu li.menu-item
@@ -211,14 +210,14 @@ a:hover
 	padding-left: 20px;
 	padding-right: 20px;
 
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 #site-navigation ul.sub-menu li a:hover
 {
 	background-color: #e50278;
-	color: #FFF;
-	text-decoration: none;
+	color: #FFF !important;
+	text-decoration: none !important;
 }
 
 .home-link
@@ -396,7 +395,7 @@ a:hover
 }
 
 .entry-meta .tags-links a {
-	text-decoration: none;
+	text-decoration: none  !important;
 }
 
 .entry-content.entry-content-empty {
@@ -419,7 +418,7 @@ a:hover
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-right: 10px;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .post-readmore a:hover { }

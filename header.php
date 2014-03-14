@@ -58,3 +58,4 @@
 			<div class="col-xs-4 col-md-3 col-lg-3">
 			</div>
 		</div>
+		<script type="text/javascript">jQuery("#menu-main-navigation li").NavMenu();</script>
