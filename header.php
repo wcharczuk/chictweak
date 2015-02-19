@@ -46,7 +46,7 @@
 				<a id="shop-here-link" href="http://www.chictweak.com" target="_blank">
 					<img id="shop-here-img" src="<?php echo get_template_directory_uri(); ?>/images/shop-here.png" on-hover-src="<?php echo get_template_directory_uri(); ?>/images/shop-here.gif" alt="shop here!"/>
 				</a>
-				<div id="shipping">Free shipping on orders over $35</div>
+				<div id="shipping">Free shipping on orders over $50</div>
 			</div>
 		</header><!-- #masthead -->
 		<div id="nav" class="row">
